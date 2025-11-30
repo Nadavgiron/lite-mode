@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { getContent } from '@/data/content';
 
 interface FooterProps {
@@ -14,11 +13,9 @@ export const Footer: React.FC<FooterProps> = ({ content }) => {
             <div className="max-w-7xl mx-auto">
                 {/* Logo */}
                 <div className="flex justify-center mb-8">
-                    <Image
+                    <img
                         src="/litemode-logo.svg"
                         alt="Litemode"
-                        width={200}
-                        height={60}
                         className="h-6 w-auto object-contain opacity-90"
                     />
                 </div>
