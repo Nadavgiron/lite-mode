@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { getContent } from '@/data/content';
 
@@ -23,9 +24,11 @@ export const Hero: React.FC<HeroProps> = ({ content }) => {
             <div className="max-w-4xl mx-auto text-center">
                 {/* Litemode Logo */}
                 <div className="mb-8 flex justify-center">
-                    <img
+                    <Image
                         src="/litemode-logo.svg"
                         alt="Litemode"
+                        width={200}
+                        height={60}
                         className="h-8 w-auto object-contain"
                     />
                 </div>
