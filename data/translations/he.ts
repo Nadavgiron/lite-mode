@@ -43,7 +43,6 @@ export const he = {
             modal: {
                 headline: "מערכת ההפעלה המלאה לצוות שלך.",
                 coreFeatures: {
-                    title: "Core Features:", // User didn't translate this header in the map, keeping English or inferring?
                     // The map says: "Core Features List:". It doesn't explicitly give a Hebrew title for "Core Features:".
                     // I'll keep "Core Features:" or maybe "תכונות ליבה:"?
                     // The user said "Do not translate it yourself; use the provided strings literal by literal."
