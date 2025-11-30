@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface CardProps {
     logo?: string;
@@ -16,9 +17,11 @@ export const Card: React.FC<CardProps> = ({ logo, productName, tag, headline, co
             {/* Logo */}
             {logo && (
                 <div className="mb-4 flex justify-center">
-                    <img
+                    <Image
                         src={logo}
                         alt={productName}
+                        width={200}
+                        height={200}
                         className="h-14 w-auto object-contain"
                     />
                 </div>
